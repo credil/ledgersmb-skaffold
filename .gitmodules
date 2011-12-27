@@ -1,0 +1,6 @@
+[submodule "vendor/plugins/can-o-pg"]
+	path = vendor/plugins/can-o-pg
+	url = git://github.com/mcr/can-o-pg.git
+[submodule "ledgersmb"]
+	path = ledgersmb
+	url = git://github.com/credil/ledgersmb.git
