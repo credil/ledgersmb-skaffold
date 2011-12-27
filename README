@@ -1,0 +1,3 @@
+This is a skaffold that runs LedgerSMB in a single directory.
+It supports individual user use of LedgerSMB, and also includes a set of test
+cases for LedgerSMB.
