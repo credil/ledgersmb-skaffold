@@ -5,9 +5,9 @@ while [ ! -f can-o-pg.settings ]; do
     cd ..
 done
 TOP=$(pwd)
+make stop
 
 set -e
-make stop
 rm -rf run
 make
 sleep 1
