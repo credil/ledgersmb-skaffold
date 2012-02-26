@@ -1,2 +1,43 @@
+# -*- makefile -*-
+
 APPNAME:=ledgersmb
+
+public:	public/login.pl public/index.html public/favicon.ico public/ledgersmb.conf public/locale public/UI public/css public/images ledgersmb-httpd.conf
+	mkdir -p public
+
+public/index.html:
+	mkdir -p public
+	cd public && ln -s ../ledgersmb/*.html .
+
+public/locale:
+	mkdir -p public
+	cd public && ln -s ../ledgersmb/locale .
+
+public/images:
+	mkdir -p public
+	cd public && ln -s ../ledgersmb/images .
+
+public/login.pl:
+	mkdir -p public
+	cd public && ln -s ../ledgersmb/*.pl   .
+
+public/UI:
+	mkdir -p public
+	cd public && ln -s ../ledgersmb/UI .
+
+public/css:
+	mkdir -p public
+	cd public && ln -s ../ledgersmb/css .
+
+public/favicon.ico:
+	mkdir -p public
+	cd public && ln -s ../ledgersmb/favicon.ico .
+
+public/ledgersmb.conf: ledgersmb.conf.in
+	${SEDFILE} $< >$@
+
+ledgersmb-httpd.conf: ledgersmb-httpd.conf.in
+	${SEDFILE} $< >$@
+
+
 
