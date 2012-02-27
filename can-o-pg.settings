@@ -1,6 +1,8 @@
 # -*- makefile -*-
 
 APPNAME:=ledgersmb
+DBPASSWORD=ledgersmbtest
+
 
 public:	public/login.pl public/index.html public/favicon.ico public/ledgersmb.conf public/locale public/UI public/css public/images ledgersmb-httpd.conf
 	mkdir -p public
