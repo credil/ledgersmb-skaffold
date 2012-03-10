@@ -41,5 +41,10 @@ public/ledgersmb.conf: ledgersmb.conf.in
 ledgersmb-httpd.conf: ledgersmb-httpd.conf.in
 	${SEDFILE} $< >$@
 
-
+testdb:
+	-make stop
+	make clean
+	make ${DBPATH}/postmaster.pid
+	sleep 4
+	./prepare-test-database.sh
 

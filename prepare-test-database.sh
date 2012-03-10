@@ -5,8 +5,14 @@
 #  and in debian can be found in postgresql-contrib-XX
 # Default variable values section
 
+# these are unset because the "make foo" below otherwise winds up
+# printing junk about entering/exiting directories if invoked from
+# make testdb.  WHY print this to stdout, GNUmake?
+unset MAKEFLAGS
+unset MAKELEVEL
+
 owner=ledgersmb
-pass=LEDGERSMBINITIAL
+pass=$(make dbpass)
 host=$(make dbpath)
 port=5432
 srcdir=ledgersmb
