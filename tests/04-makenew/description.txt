@@ -1,0 +1,3 @@
+This test cases validates that the setup.pl will create a database for
+a new company called "newco".  This test drops any existing newco database.
+
