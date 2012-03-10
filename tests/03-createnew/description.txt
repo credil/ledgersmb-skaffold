@@ -1,0 +1,2 @@
+This test cases validates that the setup.pl is able finish the login
+to the new company.

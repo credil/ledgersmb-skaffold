@@ -1,2 +1,2 @@
 This test cases validates that the login.pl is able to authenticate against
-the created database super-user.
+the created database super-user.  (login.js in setup.pl uses login.pl for this)

@@ -1,0 +1,51 @@
+HTTP/1.1 200 OK
+Date: TODAY
+Server: Apache/2.2.16 (Debian) PHP/5.3.3-7+squeeze3 with Suhosin-Patch
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title></title>
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="-1" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	
+	<link rel="stylesheet" href="css/ledgersmb.css" type="text/css" title="LedgerSMB stylesheet" />
+	
+	
+	<link rel="stylesheet" href="UI/setup/stylesheet.css" type="text/css" title="LedgerSMB stylesheet" />
+	
+	
+	
+	
+        
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+	<meta name="robots" content="noindex,nofollow" />
+        
+</head>
+
+<body>
+<h2>Database Management Console</h2>
+<div class="listtop">Confirm Operation</div>
+
+<div id="username">Logged in as ledgersmb</div>
+<div id="notice"></div>
+<div id="message">Database does not exist.</div>
+<div id="operation">Create Database?</div>
+<form action="setup.pl" method="POST" name="confirm_operation">
+<input id="database" type="hidden" name="database" value="notyetexist" />
+<div class="inputrow">
+<button id="action-create-db" class="submit" name="action" value="create_db" type="submit">Yes</button>
+</div>
+<div id="others">Backup</div>
+<div class="inputrow">
+<button id="action-backup-db" class="submit" name="action" value="backup_db" type="submit">Backup DB</button>
+<button id="action-backup-roles" class="next" name="action" value="backup_roles" type="submit">Backup Roles</button>
+</div>
+</form>
+</body>
+</html>
