@@ -35,6 +35,9 @@ public/favicon.ico:
 	mkdir -p public
 	cd public && ln -s ../ledgersmb/favicon.ico .
 
+url:
+	@echo ${SYSTEMURL}
+
 public/ledgersmb.conf: ledgersmb.conf.in
 	${SEDFILE} $< >$@
 
