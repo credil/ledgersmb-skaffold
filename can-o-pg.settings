@@ -4,16 +4,24 @@ APPNAME:=ledgersmb
 DBPASSWORD=ledgersmbtest
 
 
-public:	public/login.pl public/index.html public/favicon.ico public/ledgersmb.conf public/locale public/UI public/css public/images ledgersmb-httpd.conf
+public:	public/login.pl public/index.html public/favicon.ico public/ledgersmb.conf public/locale public/UI public/css public/images ledgersmb-httpd.conf public/sql public/templates
 	mkdir -p public
 
 public/index.html:
 	mkdir -p public
 	cd public && ln -s ../ledgersmb/*.html .
 
+public/templates:
+	mkdir -p public
+	cd public && cp -r ../ledgersmb/templates .
+
 public/locale:
 	mkdir -p public
 	cd public && ln -s ../ledgersmb/locale .
+
+public/sql:
+	mkdir -p public
+	cd public && ln -s ../ledgersmb/sql .
 
 public/images:
 	mkdir -p public
