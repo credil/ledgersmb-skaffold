@@ -36,7 +36,7 @@ Content-Type: text/html; charset=utf-8
 <div class="inputrow">
 <label id="coa-lc-label" for="coa-lc">Country Code</label>
 	  <select id="coa-lc" name="coa_lc">
-<!-- SOMETHING BELONGS HERE -->	    
+	    <option  id="coa-lc-1" value="at" >at</option><option  id="coa-lc-2" value="au" >au</option><option  id="coa-lc-3" value="be" >be</option><option  id="coa-lc-4" value="br" >br</option><option  id="coa-lc-5" value="ca" >ca</option><option  id="coa-lc-6" value="ch" >ch</option><option  id="coa-lc-7" value="cn" >cn</option><option  id="coa-lc-8" value="co" >co</option><option  id="coa-lc-9" value="cz" >cz</option><option  id="coa-lc-10" value="de" >de</option><option  id="coa-lc-11" value="dk" >dk</option><option  id="coa-lc-12" value="eg" >eg</option><option  id="coa-lc-13" value="es" >es</option><option  id="coa-lc-14" value="fr" >fr</option><option  id="coa-lc-15" value="hu" >hu</option><option  id="coa-lc-16" value="id" >id</option><option  id="coa-lc-17" value="it" >it</option><option  id="coa-lc-18" value="lv" >lv</option><option  id="coa-lc-19" value="nl" >nl</option><option  id="coa-lc-20" value="no" >no</option><option  id="coa-lc-21" value="pl" >pl</option><option  id="coa-lc-22" value="py" >py</option><option  id="coa-lc-23" value="se" >se</option><option  id="coa-lc-24" value="tw" >tw</option><option  id="coa-lc-25" value="uk" >uk</option><option  id="coa-lc-26" value="us" >us</option><option  id="coa-lc-27" value="ve" >ve</option>
 	  </select>
 </div>
 <div class="inputrow">

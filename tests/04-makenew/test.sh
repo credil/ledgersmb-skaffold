@@ -30,6 +30,6 @@ curl -s --include \
     --user ${owner}:${pass} "${url}/setup.pl" | \
     perl -f ${TOP}/http-sanity.pl | \
     tee OUTPUT/result04.txt | \
-    diff - expected04.txt
+    diff -b -u - expected04.txt
 
 
