@@ -1,0 +1,6 @@
+This is a test of the first login of a user to the newco database.
+The script from test 007 is used to create the database.
+
+
+
+
