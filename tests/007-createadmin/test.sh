@@ -8,7 +8,7 @@ done
 TOP=$(pwd)
 
 ### 
-cd tests/04-makenew
+cd tests/007-createadmin
 
 unset MAKEFLAGS
 unset MAKELEVEL
@@ -22,14 +22,9 @@ database=newco
 
 mkdir -p OUTPUT
 
-curl -s --include \
-     --data-urlencode "s_user=${owner}" \
-     --data-urlencode "s_password=${pass}" \
-     --data-urlencode "database=${database}" \
-     --data-urlencode "action=create_db" \
-    --user ${owner}:${pass} "${url}/setup.pl" | \
+. make-newco-database.sh |
     perl -f ${TOP}/http-sanity.pl | \
-    tee OUTPUT/result04.txt | \
-    diff -b -u - expected04.txt
+    tee OUTPUT/result07.txt | \
+    diff -b -u - expected07.txt
 
 

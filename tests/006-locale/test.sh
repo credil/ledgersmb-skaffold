@@ -8,7 +8,7 @@ done
 TOP=$(pwd)
 
 ### 
-cd tests/06-locale
+cd tests/006-locale
 
 unset MAKEFLAGS
 unset MAKELEVEL

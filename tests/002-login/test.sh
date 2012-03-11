@@ -6,7 +6,7 @@ while [ ! -f can-o-pg.settings ]; do
     cd ..
 done
 TOP=$(pwd)
-cd tests/02-login
+cd tests/002-login
 
 unset MAKEFLAGS
 unset MAKELEVEL

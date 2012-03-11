@@ -8,7 +8,7 @@ done
 TOP=$(pwd)
 
 ### 
-cd tests/05-pickcoa
+cd tests/005-pickcoa
 
 unset MAKEFLAGS
 unset MAKELEVEL
