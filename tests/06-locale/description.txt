@@ -1,0 +1,5 @@
+This test cases validates that the setup.pl will create a database for
+a new company called "newco" with a given chart of accounts, and then
+pick the language.
+
+
