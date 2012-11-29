@@ -1,6 +1,6 @@
 HTTP/1.1 200 Success
 Date: TODAY
-Server: Apache/2.2.16 (Debian) PHP/5.3.3-7+squeeze3 with Suhosin-Patch
+Server: Apache VERSION
 Set-Cookie: LedgerSMB-1.3-skaffold=Login; path=/
 Content-Length: 0
 Content-Type: text/html

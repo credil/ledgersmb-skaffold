@@ -1,6 +1,6 @@
 HTTP/1.1 200 OK
 Date: TODAY
-Server: Apache/2.2.16 (Debian) PHP/5.3.3-7+squeeze3 with Suhosin-Patch
+Server: Apache VERSION
 Transfer-Encoding: chunked
 Content-Type: text/html; charset=utf-8
 

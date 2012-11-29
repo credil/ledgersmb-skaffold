@@ -28,8 +28,7 @@ mkdir -p OUTPUT
 login=guy
 passwd=smiley
 
-curl -s --include \
-    --user ${login}:${passwd} "${url}/login.pl?action=authenticate&company=newco" | \
+. ../008-firstlogin/dologin.sh | \
     perl -f ${TOP}/http-sanity.pl | \
     tee OUTPUT/result008a.txt | \
     diff -b -u - expected008a.txt
