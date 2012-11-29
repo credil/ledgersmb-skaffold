@@ -1,3 +1,19 @@
 This is a skaffold that runs LedgerSMB in a single directory.
 It supports individual user use of LedgerSMB, and also includes a set of test
 cases for LedgerSMB.
+
+"make apache" to start.
+The ./prepare-test-database.sh does not work.
+Instead, create a test database by going to:
+        cd tests/007-createadmin
+        ./test.sh
+
+Visit http://localhost:8179/    (8000 + uid. run "id" to find uid)
+Login: guy
+password: smiley
+company: newco
+
+
+
+
+
