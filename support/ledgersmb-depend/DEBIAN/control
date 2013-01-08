@@ -1,0 +1,24 @@
+Package: ledgersmb
+Version: $(VER)
+Section: credil
+Priority: optional
+Architecture: all
+Maintainer: Michael Richardson <mcr@sandelman.ca>
+Homepage: http://www.ledgersmb.org/
+Depends: perl (>= 5.8.0-1), libconfig-std-perl,
+  libconfig-any-perl, libmime-lite-perl, libdbi-perl, libdbd-pg-perl, liberror-perl,
+  liblocale-maketext-lexicon-perl (>= 0.62-1), libtemplate-perl (>=2.14-1),
+  libhtml-parser-perl, liblog-log4perl-perl, libdatetime-perl, apache2 | httpd-cgi,
+  libcgi-simple-perl, libfile-mimeinfo-perl, libio-stringy-perl,
+  postgresql-client, postgresql-contrib, dbconfig-common
+Recommends: default-mta | mail-transport-agent, texlive-latex-recommended, libopenoffice-oodoc-perl,
+  libmath-bigint-gmp-perl, libparse-recdescent-perl, libtemplate-plugin-latex-perl
+Suggests: postgresql, lpr, libnet-tclink-perl, latex-cjk-all,
+  libimage-size-perl
+Description: financial accounting and ERP program (dependancies only)
+ LedgerSMB is a double-entry financial accounting and Enterprise Resource
+ Planning system which offers "Accounts Receivable", "Accounts Payable" and
+ "General Ledger" tracking as well as inventory control and fixed assets
+ handling.  THIS PACKAGE installs ONLY the dependancies, for someone that
+ needs to run bleeding edge ledgersmb code, but wants things installed from
+ Debian repo.
