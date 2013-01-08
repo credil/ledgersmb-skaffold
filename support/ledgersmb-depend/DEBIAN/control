@@ -1,4 +1,4 @@
-Package: ledgersmb
+Package: ledgersmb-depend
 Version: $(VER)
 Section: credil
 Priority: optional
