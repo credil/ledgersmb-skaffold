@@ -183,7 +183,6 @@ DATABASE=$company_name
 export PSQLUSER DATABASE
 psql_cmd="make psql"
 
-
 #createdb $psql_args -O $owner -E UNICODE $company_name
 #createlang $psql_args plpgsql $company_name
 
@@ -231,12 +230,7 @@ if ! test "$coa" = "none" ; then
   echo done.
 fi
 
-cat <<EOF | $psql_cmd 2>&1 | unchatter
-\\COPY language FROM stdin WITH DELIMITER '|'
-`$srcdir/tools/generate-language-table-contents.pl $srcdir/locale/po`
-EOF
-
-
+echo -n Creating admin user..
 cat <<CREATE_USER | $psql_cmd 2>&1 | unchatter
 SELECT admin__save_user(NULL,
                          person__save(NULL,
@@ -255,3 +249,4 @@ FROM pg_roles
 WHERE rolname like 'lsmb_${company_name}_%';
 
 CREATE_USER
+echo done.
