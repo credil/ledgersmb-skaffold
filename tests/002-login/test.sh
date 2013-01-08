@@ -10,7 +10,7 @@ cd tests/002-login
 
 unset MAKEFLAGS
 unset MAKELEVEL
-owner=ledgersmb
+owner=ledgersmb_development
 pass=$(cd ${TOP} && make dbpass)
 url=$(cd ${TOP}  && make url)
 

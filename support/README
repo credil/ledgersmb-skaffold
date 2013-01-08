@@ -3,3 +3,13 @@ The dependancy package can also be retrieve by adding
 
 to your /etc/apt/sources.list.d/credil.list
 
+To add the CREDIL archive key:
+	curl http://mirrors.credil.org/credil/credil-dpkg.pgp | sudo apt-key add -
+
+Load it with:
+	sudo apt-get install ledgersmb-depend
+
+
+
+
+
