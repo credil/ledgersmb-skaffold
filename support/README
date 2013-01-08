@@ -1,0 +1,5 @@
+The dependancy package can also be retrieve by adding
+	deb http://mirrors.credil.org/credil credil main
+
+to your /etc/apt/sources.list.d/credil.list
+
