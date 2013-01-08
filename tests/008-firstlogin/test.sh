@@ -12,7 +12,7 @@ cd tests/008-firstlogin
 
 unset MAKEFLAGS
 unset MAKELEVEL
-owner=ledgersmb
+owner=$(cd ${TOP} && make dbuser)
 pass=$(cd ${TOP} && make dbpass)
 url=$(cd ${TOP}  && make url)
 

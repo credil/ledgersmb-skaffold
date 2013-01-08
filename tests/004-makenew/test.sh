@@ -12,7 +12,7 @@ cd tests/004-makenew
 
 unset MAKEFLAGS
 unset MAKELEVEL
-owner=ledgersmb
+owner=$(cd ${TOP} && make dbuser)
 pass=$(cd ${TOP} && make dbpass)
 url=$(cd ${TOP}  && make url)
 
