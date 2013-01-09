@@ -60,5 +60,5 @@ testdb:
 	./prepare-test-database.sh
 
 dbuser:
-	@echo ${APPNAME}_development
+	@echo ${APPNAME}
 
